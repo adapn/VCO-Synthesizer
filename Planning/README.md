@@ -1,4 +1,4 @@
-# Breadboard-Synthesizer
+# PLANNING NOTES 
 
-#sdsdsd
+
 
