@@ -31,8 +31,12 @@ Welcome to the planning stage of the Breadboard-Synthesizer repository! This pag
     - We can basically make a DC power supply, diy eurorack power supply is a good start and https://www.instructables.com/Dual-Power-Supply-Circuit12V-and-12V/
 
     -Plan: Use a AC-AC wall adapter that will take mains volotage and provide 15VAC (15 because using 12VAC is right in the range we want to step down, the wall adapter could provide maybe 11VAC or higher, so going over in this case will be better)
-    as we can just use a voltage regulator to step it down.). Once we have 15VAC we use a standard DC power supply circuit with a full birdge rectifier and filters with voltage regulators to get 12 - 0 - 12.
-    we will have to use 7812 for the positive rail and 7912 for the negative rails. 
+    as we can just use a voltage regulator to step it down.). Once we have 15VAC we use a standard DC power supply circuit with a full birdge rectifier and filters with voltage regulators to get 12V DC which is duel supply.
+
+    -How to Steps:
+    1. q
+    2. w
+    3. Ok so now we need to get two terminals with + and -. To do so we use a virtual ground. We need to make a virtual grounds or rail splitter circuits. 
 
 ---
 
