@@ -16,7 +16,7 @@ Welcome to the planning stage of the Breadboard-Synthesizer repository! This pag
 
 ---
 
-## **Power_Supply**1
+## **Power_Supply**
 
  Q1. How much voltage do we need for the synth? How many Amps?
     - Based on forums posts and standard synth schematics its +-12V and 1A. There are also schematics for VCO's, VCF's and VCA's that use 15V but it seems pretty easy to translate into working with +-12.
@@ -36,8 +36,14 @@ Welcome to the planning stage of the Breadboard-Synthesizer repository! This pag
 
     -How to Steps:
     1. We take out AC-DC wall adapter, in this case the WSU150-1200-R that outputs 15VDC with 1.2A, and plug into wall. 
-    2. We use a 
+    2. We use the included female connection to connect it to our breadboard. 
     3. Ok so now we need to get two terminals with + and -. To do so we use a virtual ground. We need to make a virtual grounds or rail splitter circuits. 
+
+
+
+    Useful Links:
+    Decouping Capacitord and why: https://www.reddit.com/r/AskElectronics/comments/qvmnp3/what_do_all_those_capacitors_in_ac_circuits_do/
+    
 
 ---
 
