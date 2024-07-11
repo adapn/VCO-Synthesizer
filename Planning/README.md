@@ -16,7 +16,7 @@ Welcome to the planning stage of the Breadboard-Synthesizer repository! This pag
 
 ---
 
-## **Power_Supply**
+## **Power_Supply**1
 
  Q1. How much voltage do we need for the synth? How many Amps?
     - Based on forums posts and standard synth schematics its +-12V and 1A. There are also schematics for VCO's, VCF's and VCA's that use 15V but it seems pretty easy to translate into working with +-12.
