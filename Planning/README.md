@@ -43,7 +43,9 @@ Welcome to the planning stage of the Breadboard-Synthesizer repository! This pag
 
     Useful Links:
     Decouping Capacitord and why: https://www.reddit.com/r/AskElectronics/comments/qvmnp3/what_do_all_those_capacitors_in_ac_circuits_do/
-    
+
+    Final Circuit:
+    Using the LM337 (NEG Voltage regulator) and LM137 (POS voltage regulator) we were able to convert 24V DC into +/-12 DC for duel supply.
 
 ---
 
