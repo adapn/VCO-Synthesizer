@@ -44,11 +44,17 @@ Welcome to the planning stage of the Breadboard-Synthesizer repository! This pag
    Decouping Capacitord and why: https://www.reddit.com/r/AskElectronics/comments/qvmnp3/what_do_all_those_capacitors_in_ac_circuits_do/
 
    Final Circuit:
-   Using the LM337 (NEG Voltage regulator) and LM137 (POS voltage regulator) we were able to convert 24V DC into +/-12 DC for duel supply.
+   Using the LM337 (NEG Voltage regulator) and LM137 (POS voltage regulator) we were able to convert 24V DC into +/-12 DC for duel supply. This circuit was taken from inspiration from the Texas insturment's LM337, with my own modifications as seen below:
    Added D1 and D3 for reverse polarity currect protection. 
    ADDED D2 and D4 for Capacitor Discharge Protection: They protect against the situation where the output capacitor could discharge through the 
    internal structure of the regulator IC. This can happen during power-down conditions, and the diodes   
     provide a path for the current, preventing it from damaging the ICs.
+
+COMPONENT LIST:
+4 DIODES: 1N4002
+CAPACITORS: 2 * 1000uF/25V and 2 22uF/50V
+ICs - LM317T	& LM337T
+Resistors: 2 * 120, 2 * 1032
 
 ---
 
