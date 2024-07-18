@@ -46,6 +46,9 @@ Welcome to the planning stage of the Breadboard-Synthesizer repository! This pag
 
     Final Circuit:
     Using the LM337 (NEG Voltage regulator) and LM137 (POS voltage regulator) we were able to convert 24V DC into +/-12 DC for duel supply.
+    Added D1 and D3 for reverse polarity currect protection. 
+    ADDED D2 and D4 for Capacitor Discharge Protection: They protect against the situation where the output capacitor could discharge through the internal structure of the regulator IC. This can happen during power-down conditions, and the diodes   
+    provide a path for the current, preventing it from damaging the ICs.
 
 ---
 
