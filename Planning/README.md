@@ -30,41 +30,26 @@ Welcome to the planning stage of the Breadboard-Synthesizer repository! This pag
     - We can use a DC Barrel Jack Connector, like any componenet we can hook it up to the breadboard and plug in our DC supply to supply 15V. But to actually get duel supply 12V more steps will be required.
     - We can basically make a DC power supply, diy eurorack power supply is a good start and https://www.instructables.com/Dual-Power-Supply-Circuit12V-and-12V/
 
-    -Plan: Use a AC-AC wall adapter that will take mains volotage and provide 15VAC (15 because using 12VAC is right in the range we want to step down, the wall adapter could provide maybe 11VAC or higher, so going over in this case will be better)
+   -Plan: Use a AC-AC wall adapter that will take mains volotage and provide 15VAC (15 because using 12VAC is right in the range we want to step down, the wall adapter could provide maybe 11VAC or higher, so going over in this case will be better)
     as we can just use a voltage regulator to step it down.). Once we have 15VAC we use a standard DC power supply circuit with a full birdge rectifier and filters with voltage regulators to get 12V DC which is duel supply.
-    -New Plan: Althought AC-AC seems more fun, I couldnt find one on amazong so ill just use a AC to DC wall adapter and bring down the voltage to 12V virutal ground with 2 supplies. 
+   -New Plan: Althought AC-AC seems more fun, I couldnt find one on amazong so ill just use a AC to DC wall adapter and bring down the voltage to 12V virutal ground with 2 supplies. 
 
-    -How to Steps:
-    1. We take out AC-DC wall adapter, in this case the WSU150-1200-R that outputs 15VDC with 1.2A, and plug into wall. 
-    2. We use the included female connection to connect it to our breadboard. 
-    3. Ok so now we need to get two terminals with + and -. To do so we use a virtual ground. We need to make a virtual grounds or rail splitter circuits. 
+   -How to Steps:
+   1. We take out AC-DC wall adapter, in this case the WSU150-1200-R that outputs 15VDC with 1.2A, and plug into wall. 
+   2. We use the included female connection to connect it to our breadboard. 
+   3. Ok so now we need to get two terminals with + and -. To do so we use a virtual ground. We need to make a virtual grounds or rail splitter 
+  circuits. 
 
+   Useful Links:
+   Decouping Capacitord and why: https://www.reddit.com/r/AskElectronics/comments/qvmnp3/what_do_all_those_capacitors_in_ac_circuits_do/
 
-
-    Useful Links:
-    Decouping Capacitord and why: https://www.reddit.com/r/AskElectronics/comments/qvmnp3/what_do_all_those_capacitors_in_ac_circuits_do/
-
-    Final Circuit:
-    Using the LM337 (NEG Voltage regulator) and LM137 (POS voltage regulator) we were able to convert 24V DC into +/-12 DC for duel supply.
-    Added D1 and D3 for reverse polarity currect protection. 
-    ADDED D2 and D4 for Capacitor Discharge Protection: They protect against the situation where the output capacitor could discharge through the internal structure of the regulator IC. This can happen during power-down conditions, and the diodes   
+   Final Circuit:
+   Using the LM337 (NEG Voltage regulator) and LM137 (POS voltage regulator) we were able to convert 24V DC into +/-12 DC for duel supply.
+   Added D1 and D3 for reverse polarity currect protection. 
+   ADDED D2 and D4 for Capacitor Discharge Protection: They protect against the situation where the output capacitor could discharge through the 
+   internal structure of the regulator IC. This can happen during power-down conditions, and the diodes   
     provide a path for the current, preventing it from damaging the ICs.
 
 ---
 
-## **Features**
 
-- **Feature 1**: Description of feature 1.
-- **Feature 2**: Description of feature 2.
-- **Feature 3**: Description of feature 3.
-
-![Another Random Image](https://via.placeholder.com/200)
-
----
-
-## **Installation**
-
-Follow these instructions to install the project:
-
-```bash
-npm install project-name
