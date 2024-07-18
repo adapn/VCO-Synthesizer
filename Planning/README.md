@@ -56,6 +56,24 @@ CAPACITORS: 2 * 1000uF/25V and 2 22uF/50V
 ICs - LM317T	& LM337T
 Resistors: 2 * 120, 2 * 1032
 
+This concludes the first part of the project, getting plus and minus 12 volt for the future op amps and 2.5A for use for several componenets. 
+
+
+## **Voltage_Controled_Oscillator**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 
