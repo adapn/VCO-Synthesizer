@@ -61,6 +61,23 @@ This concludes the first part of the project, getting plus and minus 12 volt for
 
 ## **Voltage_Controled_Oscillator**
 
+Now for the VCO which is the bread and butter of this project. My first challange was discovering which waveform to being, in which case I decided on a sawtooth waveform as it seemed realitivly easy to make and also we could use wave convertors to tansform this sawtooth into other waves.
+
+I think theers a lot of disucssion on which to start with, whether it be square, sine, triang, sawtooth etc. I ultilatmly just wanted to being and learn as much as possible so i just chose a sawtooth. 
+
+To begin lets start with some backgrouond. A Schmitt Trigger which is essential a way to createa HIGH and LOW states using analog input. However in our use case, we will be using a resistor and a capacitor to form a RC charging circuit. Essential a Schmitt trigger will trigger ON when a highi voltage is detected and remain on until that voltage goes to a low enough value.
+
+  1. Now lets describe each state we want to achive with the Sawtooth waveform and how we achive it. First how do we get the rising edge?
+     - First ever rising edge: The first rising edge occurs at time=-0. The capacitor is fully discharged and acts like a O.C. As voltage flows  
+       through, the cpactor starts charging through the resistor as they are in parrael. Once the voltage increases across the CAP to the upper 
+       threshold, the Schmitt trigger will appear HIGH and causes a rising edge.
+    
+  2. Steady linear decline:
+     Once the Schmitt is triggeered, it cause the Diode to be forward bias. This activation cause a new part of the circuit to be "unlokced" in a sense. and it will allow for a path for the capactor to discharge to. The capctor will discharge through the diode, and slowly loose its charge. This is denoted by the falling edge of the saw tooth graph. Once the voltage of the CAP drops below the lower threshold, the Smith Trigger switch back to low and "locks" the diode portion of the circuit.
+
+ 3. Continous rising edge:
+    Now that the diode is locked, and the smith is gving a low reading. The capctior will begin charging up again through the resistor. And will eventually cause the smith to be HIGH again and the process repeats. 
+
 
 
 
