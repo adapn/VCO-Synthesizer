@@ -78,6 +78,21 @@ To begin lets start with some backgrouond. A Schmitt Trigger which is essential 
  3. Continous rising edge:
     Now that the diode is locked, and the smith is gving a low reading. The capctior will begin charging up again through the resistor. And will eventually cause the smith to be HIGH again and the process repeats. 
 
+Now to build the sawtooth waveform: 
+(Insert circuit schematic) 
+
+1. Some issues I encountered: first was using the wrong diode. I used the common 1N4006 diodee which i thought would work since its the only diode I've used throughtout all my labs in seocnd year. Well turns outthis is a recfier diode, which means it had
+   a) A voltage drop around 0.7V at 1A
+   b)Reverse recovery time (ttr) at 30ms
+   c) was designer for POWER rectification
+
+This meant its overall design did not have FAST switching in mind.
+
+Now comparing that to a 1N4148 Diode, which is a small signal fast-switching diode:
+   a)A voltage drop of around 0.7 at 10mA
+   b) a trr of 4ns (VERY FAST)
+
+   Because this diodes switches very fast, it reduced the likilhood of transicent oscialltions and irregulatries. The slow delay of the recifier diode causes delays in the sawtooth. The reason the diode is able to switch faster is because the higher doping concentration for fast swithcing which allows for a quick recovery time. Where as the rectifier diode has a lower concentration which leads to a slower recoveyr time.
 
 
 
