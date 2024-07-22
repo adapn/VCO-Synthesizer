@@ -95,6 +95,8 @@ Now comparing that to a 1N4148 Diode, which is a small signal fast-switching dio
    Because this diodes switches very fast, it reduced the likilhood of transicent oscialltions and irregulatries. The slow delay of the recifier diode causes delays in the sawtooth. The reason the diode is able to switch faster is because the higher doping concentration for fast swithcing which allows for a quick recovery time. Where as the rectifier diode has a lower concentration which leads to a slower recoveyr time.
 
 
+Now the 100k Ohm resisotr is just temporary to observe the results, we will need to change this to allow for voltage changes to change the pitch of the wavefform. Before this though we need to be able to hear what the wave we produced sounds like.
+To do so we need to use a voltage buffer as simlpy attaching a 
 
 
 
