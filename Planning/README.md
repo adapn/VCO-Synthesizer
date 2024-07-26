@@ -96,7 +96,9 @@ Now comparing that to a 1N4148 Diode, which is a small signal fast-switching dio
 
 
 Now the 100k Ohm resisotr is just temporary to observe the results, we will need to change this to allow for voltage changes to change the pitch of the wavefform. Before this though we need to be able to hear what the wave we produced sounds like.
-To do so we need to use a voltage buffer as simlpy attaching a 
+To do so we need to use a voltage buffer / unity gain amplifier. 
+
+In essense this follows the non-inverting amplifier, but with the top resistor Rf shorted, which means Rf=0. If Rf is equal to 0, then the equaton for the input voltage and output voltage could be simplified as vin=vo. therefore the input and output voltages are the same. Now the reason this works as oppose to connecting a straight speaker is because there is no current (in an ideal op-amp) that flows into the buffer. Therefore no interferance will be seen when you connect headphoens or speakers.
 
 
 
